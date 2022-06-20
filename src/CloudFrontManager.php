@@ -30,7 +30,7 @@ class CloudFrontManager extends Manager
     {
         $this->ensureAwsSdkIsInstalled();
 
-        $config = $this->config['cloudfront'];
+        $config = config('cloudfront');
 
         $credentials = $this->getCredentials($config['credentials']);
 
